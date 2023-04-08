@@ -1,0 +1,6 @@
+config.sh
+/env
+/__pycache__
+/tutor_app/__pycache__
+tutor_app/home/__pycache__
+tutor_app/tutors/__pycache__

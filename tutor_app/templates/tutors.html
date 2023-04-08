@@ -1,0 +1,31 @@
+{% from "macros.html" import navbar %}
+{% extends "base.html" %}
+
+{% block title %}Tutors{% endblock %}
+
+{% block main %}
+    {{ navbar() }}
+    <div>
+        <h2>Tutors</h2>
+        {% for tutor in tutors_list %}
+            <div class="bg-primary-subtle d-flex flex-row p-3 m-3">
+                <img height="100px" class="rounded" src="../static/headshots/{{ tutor.img_url }}">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-row justify-content-between">
+                        <h2>{{ tutor.name }}</h2>
+                        <div class="align-content-center">
+                            {% for subject in tutor.subjects %}
+                                <span class="badge rounded-pill text-bg-primary">{{ subject }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between w-75">
+                        <button type="button" class="btn btn-primary">message</button>
+                        <button type="button" class="btn btn-success">schedule</button>
+                        <button type="button" class="btn btn-warning">fav</button>
+                    </div>
+                </div>
+                </div>
+        {% endfor %}
+    </div>
+{% endblock %}
