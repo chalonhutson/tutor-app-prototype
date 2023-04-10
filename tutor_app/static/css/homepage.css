@@ -5,5 +5,19 @@
     align-items: center;
     margin-top: 2rem;
     width: 50%;
-    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.payment-homepage {
+    width: 65%;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
