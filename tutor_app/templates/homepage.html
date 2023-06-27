@@ -5,11 +5,14 @@
 
 {% block main %}
     {{ navbar() }}
+    <link rel="stylesheet" href="../static/css/homepage.css">
 
-    <div>
-        <div class="d-flex flex-row">
-            <h1>San Carlos Microschool</h1>
-            <div>
+    <div class="d-flex flex-column align-items-center">
+        <div class="homeRow">
+            <div class="homeRowSection">
+                <h1>San Carlos Microschool</h1>
+            </div>
+            <div class="homeRowSection">
                 <p>We are a micro school located on the San Carlos Apache Indian Reservation in 
                     <strong>
                         San Carlos, Arizona.
@@ -18,28 +21,36 @@
                 <button class="heroBtn">ENROLL NOW</button>
             </div>
         </div>
-        <img src="../static/stock_photos/writing_close_up_01.png">
-        <div>
-            <div>
-                <h1>What we offer</h1>
+        <img class="heroImg" src="../static/stock_photos/writing_close_up_01.png">
+        <div class="homeRowMiddle">
+            <h1>What we offer</h1>
+            <div class="offerCardContainer">
+                <div class="offerCard">
+                    <img src="../static/stock_photos/family_working_together.png">
+                    <div class="offerCardInfo">
+                        <h3>High Quality Tutors</h3>
+                        <p>risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetu adipiscing elit duis tristique sollicitudin</p>
+                    </div>
+                </div>
+                <div class="offerCard">
+                    <img src="../static/stock_photos/homeschool_work_group.png">
+                    <div class="offerCardInfo">
+                        <h3>Remote or In-Person</h3>
+                        <p>tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum </p>
+                    </div>
+                </div>
+                <div class="offerCard">
+                    <img src="../static/stock_photos/working_in_library.png">
+                    <div class="offerCardInfo">
+                        <h3>Reliably Low Pricing</h3>
+                        <p>vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div>
-                    <img width="250px" src="../static/stock_photos/family_working_together.png">
-                    <h3>High Quality Tutors</h3>
-                    <p>risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetu adipiscing elit duis tristique sollicitudin</p>
-                </div>
-                <div>
-                    <img width="250px" src="../static/stock_photos/homeschool_work_group.png">
-                    <h3>Remote or In-Person</h3>
-                    <p>risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetu adipiscing elit duis tristique sollicitudin</p>
-                </div>
-                <div>
-                    <h3>Reliably Low Pricing</h3>
-                    <img width="250px" src="../static/stock_photos/working_in_library.png">
-                    <p>risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetu adipiscing elit duis tristique sollicitudin</p>
-                </div>
-            </div>
+        </div>
+        <div class="homeRow bottomRow" style="padding: 0 10rem">
+            <h1 class="bottomSection">Who we are</h1>
+            <p class="bottomSection">sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus</p>
         </div>
 
     </div>
