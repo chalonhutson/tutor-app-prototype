@@ -4,10 +4,12 @@
 {% block title %}Tutor App{% endblock %}
 
 {% block main %}
-    {{ navbar() }}
     <link rel="stylesheet" href="../static/css/homepage.css">
 
     <div class="d-flex flex-column align-items-center">
+        <div class="signInContainer">
+            <a class="secondaryBtn" href="{{ url_for('tutors.tutors_page') }}">sign in</a>
+        </div>
         <div class="homeRow">
             <div class="homeRowSection">
                 <h1>San Carlos Microschool</h1>
@@ -18,7 +20,7 @@
                         San Carlos, Arizona.
                     </strong>
                 </p>
-                <button class="heroBtn">ENROLL NOW</button>
+                <a class="heroBtn" href="">ENROLL NOW</a>
             </div>
         </div>
         <img class="heroImg" src="../static/stock_photos/writing_close_up_01.png">
@@ -48,9 +50,18 @@
                 </div>
             </div>
         </div>
-        <div class="homeRow bottomRow" style="padding: 0 10rem">
+        <div class="bottomRow">
             <h1 class="bottomSection">Who we are</h1>
             <p class="bottomSection">sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus</p>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <a class="heroBtn" href="">ENROLL NOW</a>
+        </div>
+
+        <div class="homeFooter">
+            <a class="secondaryBtn" href="">contact us</a>
+            <a class="secondaryBtn" href="">sign in</a>
         </div>
 
     </div>

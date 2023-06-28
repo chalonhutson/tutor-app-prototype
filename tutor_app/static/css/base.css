@@ -8,20 +8,23 @@ main {
     background-color: var(--off-white);
     height: 100%;
 }
+
 :root {
     --hero-color: #efa593;
     --off-white: #efefef;
+    --secondary-color: #93a5ef;
     font-size: 16px;
 }
 
 .heroBtn {
     background-color: var(--hero-color);
-    width:75%;
-    border: none;
-    padding: .5rem .25rem;
+    width:20rem;
+    padding: 1rem 2rem;
     color: white;
-    font-size: 150%;
+    font-size: 1.5rem;
     display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .heroBtn:hover {
@@ -32,3 +35,18 @@ main {
     width: 100%;
 }
 
+.secondaryBtn {
+    margin: 5px;
+    background-color: var(--off-white);
+    border: var(--secondary-color) .1rem solid;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.secondaryBtn:hover {
+    background-color: var(--secondary-color);
+    color: var(--off-white);
+}
